@@ -620,22 +620,29 @@ mi<!DOCTYPE html>
 	<script>
 
 
-    var targetDate = new Date("January 30, 2024");
+    var targetDateTime = new Date("January 24, 2024 18:00:00 GMT+0530");
 
 // default example
 simplyCountdown('.simply-countdown-one', {
-    year: targetDate.getFullYear(),
-    month: targetDate.getMonth() + 1,
-    day: targetDate.getDate()
+    year: targetDateTime.getFullYear(),
+    month: targetDateTime.getMonth() + 1,
+    day: targetDateTime.getDate(),
+    hours: targetDateTime.getHours(),
+    minutes: targetDateTime.getMinutes(),
+    seconds: targetDateTime.getSeconds()
 });
 
 // jQuery example
 $('#simply-countdown-losange').simplyCountdown({
-    year: targetDate.getFullYear(),
-    month: targetDate.getMonth() + 1,
-    day: targetDate.getDate(),
+    year: targetDateTime.getFullYear(),
+    month: targetDateTime.getMonth() + 1,
+    day: targetDateTime.getDate(),
+    hours: targetDateTime.getHours(),
+    minutes: targetDateTime.getMinutes(),
+    seconds: targetDateTime.getSeconds(),
     enableUtc: false
 });
+
 
 </script>
 
